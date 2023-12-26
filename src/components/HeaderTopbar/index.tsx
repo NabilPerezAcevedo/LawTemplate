@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AboutUs from "@/pages/api/AboutUs";
 
 const HeaderTopbar = () => {
 
@@ -31,11 +32,11 @@ const HeaderTopbar = () => {
                                     <div className={'hover:cursor-pointer'} onClick={scrollToExpertise}>Our Expertise
                                     </div>
                                 </li>
-                                <li><a target={"_blank"}
-                                       href={'https://www.facebook.com/profile.php?id=100088853995294&sk=about_details'}><i
-                                    className={'ti-facebook'}></i></a></li>
-                                <li><a target={"_blank"} href={'https://www.instagram.com/the_closing_company/'}><i
-                                    className={'ti-instagram'}></i></a></li>
+                                {/*<li><a target={"_blank"}*/}
+                                {/*       href={'https://www.facebook.com/profile.php?id=100088853995294&sk=about_details'}><i*/}
+                                {/*    className={'ti-facebook'}></i></a></li>*/}
+                                {/*<li><a target={"_blank"} href={'https://www.instagram.com/the_closing_company/'}><i*/}
+                                {/*    className={'ti-instagram'}></i></a></li>*/}
                             </ul>
                         </div>
                     </div>
@@ -43,12 +44,11 @@ const HeaderTopbar = () => {
                         <div className={'contact-intro'}>
                             <ul>
                                 <li><Link
-                                    className={'hover:cursor-pointer text-inherit'}
-                                    href={'https://www.google.com/maps/place/1064+Av.+Juan+Ponce+de+Le%C3%B3n,+San+Juan,+00907/@18.4521508,-66.0790408,17z/data=!3m1!4b1!4m5!3m4!1s0x8c036f3128a1b4ab:0xad2638b105ce2dce!8m2!3d18.4521457!4d-66.0768521'}><i
-                                    className={'fi ti-location-pin'}>1064 Ave. Ponce de Leon, San Juan PR
-                                    00907</i></Link>
+                                    className={'hover:cursor-pointer text-inherit hover:text-blue-500'}
+                                    href={'https://maps.app.goo.gl/6XPbVc6Zy24ULtqVA'}><i
+                                    className={'fi ti-location-pin'}>{AboutUs.location}</i></Link>
                                 </li>
-                                <li><i className={'fi flaticon-email'}>legaldesk@theclosingcompany.legal</i></li>
+                                <li><i className={'fi flaticon-email'}>{' '}{AboutUs.mainEmail}</i></li>
                             </ul>
                         </div>
                     </div>

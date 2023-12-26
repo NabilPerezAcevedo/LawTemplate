@@ -19,7 +19,7 @@ import {ToastContainer} from "react-toastify";
 export default function App({ Component, pageProps }: AppProps) {
   return (<>
     <Head>
-      <title>Allan Website</title>
+      <title>Rivera Law P.R.</title>
       <meta name="description" content="The Closing Company" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
