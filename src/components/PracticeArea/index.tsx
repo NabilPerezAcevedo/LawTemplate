@@ -29,8 +29,8 @@ export default function PracticeArea() {
                                     </div>
                                 </div>
                                 <div className="wpo-service-text">
-                                    <h2>{service.sTitle}</h2>
-                                    <p>{service.des3}</p>
+                                    <h3>{service.sTitle}</h3>
+                                    {service?.des3 && <p>{service.des3}</p>}
                                 </div>
                             </div>
                         </div>
