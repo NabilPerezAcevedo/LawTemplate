@@ -45,7 +45,7 @@ const Services: ServicesType[] = [
         sTitle: 'Vehicle Accidents',
         slug: 'Vehicle-Accidents',
         description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
-        des2: 'The lower-numbered purposes are better understood and practiced',
+        des2: 'The lower-numbered purposes are better understood and practiced.',
         des3: 'Defense in criminal cases before federal and state courts.',
         icon: escrowIcon,
         ssImg1: sSingleimg1,
