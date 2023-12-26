@@ -45,7 +45,7 @@ const HeaderTopbar = () => {
                             <ul>
                                 <li><Link
                                     className={'hover:cursor-pointer text-inherit hover:text-blue-500'}
-                                    href={'https://maps.app.goo.gl/6XPbVc6Zy24ULtqVA'}><i
+                                    href={AboutUs.locationUrl}><i
                                     className={'fi ti-location-pin'}>{AboutUs.location}</i></Link>
                                 </li>
                                 <li><i className={'fi flaticon-email'}>{' '}{AboutUs.mainEmail}</i></li>
