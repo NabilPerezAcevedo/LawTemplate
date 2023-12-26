@@ -24,6 +24,14 @@ import transactionIcon from '/public/images/lawIcons/transaction.png'
 import titleSearchIcon from '/public/images/lawIcons/titleSearch.png'
 import {StaticImageData} from "next/image";
 
+import {FaHandHoldingMedical} from 'react-icons/fa'
+import {FaCarCrash} from 'react-icons/fa'
+import {GiArmBandage} from 'react-icons/gi'
+import {TbPrison} from 'react-icons/tb'
+import {RiGovernmentFill} from 'react-icons/ri'
+import {MdLocalPolice} from 'react-icons/md'
+import { IconType } from 'react-icons/lib'
+
 type ServicesType = {
     Id: string,
     sTitle: string,
@@ -32,7 +40,7 @@ type ServicesType = {
     des2: string,
     des3?: string,
     sImg: StaticImageData,
-    icon: StaticImageData,
+    icon?: IconType,
     ssImg1: StaticImageData,
     ssImg2: StaticImageData,
     sinst: StaticImageData,
@@ -47,7 +55,8 @@ const Services: ServicesType[] = [
         description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
         des2: 'The lower-numbered purposes are better understood and practiced.',
         // des3: 'Defense in criminal cases before federal and state courts.',
-        icon: escrowIcon,
+        // @ts-ignore
+        icon: <FaCarCrash size={32} color='black'/>,
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
         sinst: ins2,
@@ -61,7 +70,8 @@ const Services: ServicesType[] = [
     description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: 'Defense against harm incurred from surgeries and other medical procedures. For example, Confiscations by Customs, Police in Puerto Rico/Recoveries of cars, boats, money, jewelry, merchandise, and properties.',
-    icon: escrowIcon,
+    // icon: escrowIcon,
+    icon: <FaHandHoldingMedical size={32} color='black' />,
     ssImg1: sSingleimg1,
     ssImg2: sSingleimg2,
     sinst: ins2,
@@ -75,7 +85,8 @@ const Services: ServicesType[] = [
     description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: 'Defense against fraud',
-    icon: escrowIcon,
+    // icon: escrowIcon,
+    icon: <GiArmBandage size={32} color='black' />,
     ssImg1: sSingleimg1,
     ssImg2: sSingleimg2,
     sinst: ins2,
@@ -89,7 +100,8 @@ const Services: ServicesType[] = [
     description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: ' ',
-    icon: escrowIcon,
+    // icon: escrowIcon,
+    icon: <TbPrison size={32} color= 'black' />,
     ssImg1: sSingleimg1,
     ssImg2: sSingleimg2,
     sinst: ins2,
@@ -103,7 +115,8 @@ const Services: ServicesType[] = [
     description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: ' ',
-    icon: escrowIcon,
+    // icon: escrowIcon,
+    icon: <MdLocalPolice size={32} color= 'black' />,
     ssImg1: sSingleimg1,
     ssImg2: sSingleimg2,
     sinst: ins2,
@@ -117,7 +130,8 @@ const Services: ServicesType[] = [
     description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: 'Defense against a criminal drug charge.',
-    icon: escrowIcon,
+    // icon: escrowIcon,
+    icon: <RiGovernmentFill size={32} color= 'black' />,
     ssImg1: sSingleimg1,
     ssImg2: sSingleimg2,
     sinst: ins2,

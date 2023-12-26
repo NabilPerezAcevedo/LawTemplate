@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Services from '@/pages/api/Services';
+import { FaCarCrash } from 'react-icons/fa';
 
 export default function PracticeArea() {
 
@@ -25,7 +26,8 @@ export default function PracticeArea() {
                             <div className="wpo-service-item">
                                 <div className="wpo-service-icon">
                                     <div className="icon">
-                                        <Image src={service.icon} alt={'law-icon'} width={1000} height={1000}></Image>
+                                        {service.icon}
+                                        <i/>
                                     </div>
                                 </div>
                                 <div className="wpo-service-text">
