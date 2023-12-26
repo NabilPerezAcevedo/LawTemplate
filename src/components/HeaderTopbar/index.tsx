@@ -48,7 +48,7 @@ const HeaderTopbar = () => {
                                     href={'https://maps.app.goo.gl/6XPbVc6Zy24ULtqVA'}><i
                                     className={'fi ti-location-pin'}>{AboutUs.location}</i></Link>
                                 </li>
-                                <li><i className={'fi flaticon-email'}>legaldesk@theclosingcompany.legal</i></li>
+                                <li><i className={'fi flaticon-email'}>{' '}{AboutUs.mainEmail}</i></li>
                             </ul>
                         </div>
                     </div>
