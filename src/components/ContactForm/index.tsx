@@ -68,21 +68,13 @@ const Consultinencey = () => {
             <div className="container">
                 <div className="wpo-consultancy-section-wrapper">
                     <div className="row">
-                        <div className="col-lg-4">
-                            <div className="consult-img">
-                                <ImageGallery items={Images} autoPlay={true}
-                                              showNav={false} showThumbnails={false}
-                                              showFullscreenButton={false} showPlayButton={false} showBullets={false}
-                                />
-                            </div>
-                        </div>
                         <div className="col-lg-8 col-md-12 col-12">
                             <div className="wpo-consultancy-form-area">
                                 <div className="wpo-section-title">
                                     {showForm ? (
                                         <>
                                             <h2>{AboutUs.contactUsHeader}</h2>
-                                            <p className='text-white'>
+                                            <p>
                                             {AboutUs.contactUsBody}
                                             </p>
                                         </>
@@ -174,6 +166,14 @@ const Consultinencey = () => {
                                 </form>) : (<></>)}
                                 <div className="border-style"></div>
                             </div>
+                        </div>
+                        <div className="col-lg-4">
+                            {/*<div className="consult-img">*/}
+                            {/*    <ImageGallery items={Images} autoPlay={true}*/}
+                            {/*                  showNav={false} showThumbnails={false}*/}
+                            {/*                  showFullscreenButton={false} showPlayButton={false} showBullets={false}*/}
+                            {/*    />*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>
