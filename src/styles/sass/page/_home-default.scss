@@ -1040,7 +1040,7 @@
 --------------------------------------------------------------*/
 
 .wpo-consultancy-section{
-    background: url(/images/bg-2.jpg) no-repeat center center;
+    background: $theme-primary-color no-repeat center center;
     position: relative;
     background-size: cover;
     z-index: 1;
@@ -1050,7 +1050,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: rgba(41,57,91,.92);
+        //background: rgba(41,57,91,.92);//
         content: "";
         z-index: -1;
     }
@@ -1123,7 +1123,7 @@
             height: 55px;
             border: 0;
             border: 1px solid #4f5970;
-            background: #29395b;
+            background: #3d312e;
             color: $white;
 
             &:focus{
@@ -1162,7 +1162,8 @@
             -o-appearance: none;
             appearance: none;
             -moz-appearance: none;
-            background: #29395b url(/images/select-icon.png) no-repeat calc(100% - 15px) center;
+            background-image: url(/images/select-icon.png) no-repeat calc(100% - 15px) center;
+            background-color: #3d312e;
             position: relative;
 
             option{
