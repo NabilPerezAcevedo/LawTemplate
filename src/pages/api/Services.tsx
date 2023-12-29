@@ -15,13 +15,6 @@ import ins4 from '/public/images/instragram/16.jpg'
 import ins5 from '/public/images/instragram/17.jpg'
 import ins6 from '/public/images/instragram/18.jpg'
 
-// Icons For Jhansel
-import notaryIcon from '/public/images/lawIcons/notary.png'
-import escrowIcon from '/public/images/lawIcons/escrow.png'
-import propertyIcon from '/public/images/lawIcons/property.png'
-import taxesIcon from '/public/images/lawIcons/taxes.png'
-import transactionIcon from '/public/images/lawIcons/transaction.png'
-import titleSearchIcon from '/public/images/lawIcons/titleSearch.png'
 import {StaticImageData} from "next/image";
 
 import {FaHandHoldingMedical} from 'react-icons/fa'
