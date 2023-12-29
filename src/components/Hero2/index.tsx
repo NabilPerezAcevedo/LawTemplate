@@ -20,6 +20,11 @@ const Hero2 = () => {
                     <div data-swiper-parallax={"400"} className={'slide-text'}>
                         <p>{AboutUs.description}</p>
                     </div>
+                    <div data-swiper-parallax={"500"} className={"slide-btns"}>
+                        <div onClick={scrollIntoFeatures} className={"theme-btn hover:cursor-pointer"}>
+                            Explore more
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
