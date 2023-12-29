@@ -32,7 +32,7 @@ import {RiGovernmentFill} from 'react-icons/ri'
 import {MdLocalPolice} from 'react-icons/md'
 import { IconType } from 'react-icons/lib'
 
-type ServicesType = {
+export type ServicesType = {
     Id: string,
     sTitle: string,
     slug: string,
@@ -52,7 +52,7 @@ const Services: ServicesType[] = [
         sImg: simg2,
         sTitle: 'Vehicle Accidents',
         slug: 'Vehicle-Accidents',
-        description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue enim quis quam volutpat laoreet. Maecenas ante justo, condimentum in finibus sed, iaculis eu augue. Donec non ante nisi. Nam rhoncus risus ac quam sodales, et varius turpis feugiat. Ut in eros ullamcorper, hendrerit nunc quis, lacinia ex. Donec in imperdiet erat. Suspendisse varius sodales augue vitae imperdiet. Phasellus eget luctus erat, vestibulum vehicula leo. Nam blandit sem in libero sollicitudin, in venenatis lacus mattis. Praesent facilisis, sapien non rutrum laoreet, arcu purus finibus elit, id euismod mi lacus ut dolor. Fusce ac lectus consequat, hendrerit sem nec, ornare magna. Nulla faucibus dolor nec tempus maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque nec nibh vestibulum, efficitur lorem porttitor, suscipit nibh. Ut porta orci sed euismod eleifend.',
         des2: 'The lower-numbered purposes are better understood and practiced.',
         // des3: 'Defense in criminal cases before federal and state courts.',
         // @ts-ignore
@@ -67,7 +67,7 @@ const Services: ServicesType[] = [
     sImg: simg2,
     sTitle: 'Medical Malpractice',
     slug: 'Medical-Malpractice',
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
+    description: 'Integer ornare est eu bibendum lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce luctus tincidunt nisi a gravida. Nunc facilisis turpis leo, non sollicitudin turpis finibus consequat. Vestibulum nec nisi lobortis, mattis orci vel, placerat nisl. Maecenas efficitur accumsan faucibus. Nullam tellus quam, cursus vel malesuada vel, placerat eu mi. Suspendisse efficitur justo in libero tincidunt, sit amet fringilla risus porta. Vivamus vestibulum auctor nibh. Mauris bibendum nibh vel consectetur aliquet. Nullam scelerisque magna eu nisl pretium dapibus.',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: 'Defense against harm incurred from surgeries and other medical procedures. For example, Confiscations by Customs, Police in Puerto Rico/Recoveries of cars, boats, money, jewelry, merchandise, and properties.',
     // icon: escrowIcon,
@@ -82,7 +82,7 @@ const Services: ServicesType[] = [
     sImg: simg2,
     sTitle: "Erb's Palsy",
     slug: "Erb's-Palsy",
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
+    description: 'Vestibulum neque tellus, sollicitudin eu sapien vitae, tincidunt mattis orci. Ut varius condimentum lobortis. Nulla vitae accumsan ex. Donec quis porttitor erat. Quisque quis lectus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. In eget enim in justo consectetur hendrerit. Vivamus in pellentesque ante, ac vestibulum sapien. Sed ligula diam, consequat non diam eu, condimentum euismod sem. Mauris convallis lorem nec tellus vehicula, in luctus nulla pretium. Donec et mauris hendrerit, viverra felis sit amet, ultrices risus. Donec urna purus, sagittis vel augue ac, porta consectetur risus.',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: 'Defense against fraud',
     // icon: escrowIcon,
@@ -97,7 +97,7 @@ const Services: ServicesType[] = [
     sImg: simg2,
     sTitle: 'Criminal Cases',
     slug: 'Criminal-Cases',
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
+    description: 'Morbi vel ante porta, consequat ligula at, dignissim risus. Praesent at sodales sapien. Praesent elementum volutpat ultricies. Curabitur ultrices, mi a vulputate condimentum, ligula quam semper libero, at blandit augue augue vel justo.',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: ' ',
     // icon: escrowIcon,
@@ -112,7 +112,7 @@ const Services: ServicesType[] = [
     sImg: simg2,
     sTitle: 'Confiscations by Federal and State Authorities (Customs/PPPR)',
     slug: 'Confiscations-by-Federal-and-State-Authorities-(Customs/PPPR)',
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
+    description: 'Cras nec ipsum lorem. Nulla quis nisl et ipsum malesuada laoreet. Donec a lacus mi. Sed nec sagittis tortor. Duis eu purus sed enim feugiat finibus. Nunc ipsum arcu, venenatis vitae tellus ut, suscipit lacinia nulla. Sed quis porttitor enim. Vivamus augue purus, vestibulum quis lacinia in, condimentum sit amet magna. Phasellus vestibulum nisl orci. Integer sit amet lacinia ipsum, ac tristique sem. Ut dictum id enim ac euismod. In id interdum nibh. Sed venenatis sagittis erat quis rutrum.',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: ' ',
     // icon: escrowIcon,
@@ -127,7 +127,7 @@ const Services: ServicesType[] = [
     sImg: simg2,
     sTitle: 'Claims to the Federal and State Government',
     slug: 'Claims-to-the-Federal-Government',
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ',
+    description: 'Integer at nisl vel massa pretium laoreet. Fusce porttitor pretium risus sit amet condimentum. Proin aliquam posuere diam sit amet rhoncus. Nullam sed dictum diam. Mauris arcu ante, sodales at nibh eu, venenatis convallis tellus. Vivamus dolor nisl, faucibus sed justo quis, tempus laoreet turpis. Donec non lectus nulla. Praesent luctus nisl eu fringilla semper.',
     des2: 'The lower-numbered purposes are better understood and practiced.',
     // des3: 'Defense against a criminal drug charge.',
     // icon: escrowIcon,
