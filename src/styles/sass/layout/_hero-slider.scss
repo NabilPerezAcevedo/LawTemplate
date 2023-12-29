@@ -346,7 +346,8 @@
 	hero style 1
 --------------------------------------------*/
 .static-hero {
-	background: url("../../../../public/images/lawBackground.jpg");
+	background-image: url("../../../../public/images/lawBackground.jpg");
+	background-size: 100%;
 	height: 700px;
 	display: flex;
 	position: relative;
