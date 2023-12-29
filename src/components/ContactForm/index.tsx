@@ -3,6 +3,7 @@ import React, {useCallback, useState} from 'react'
 import SimpleReactValidator from 'simple-react-validator';
 import Images from "@/pages/api/ContactFormImages";
 import emailjs from '@emailjs/browser'
+import AboutUs from '@/pages/api/AboutUs';
 
 
 const Consultinencey = () => {
@@ -80,14 +81,15 @@ const Consultinencey = () => {
                                 <div className="wpo-section-title">
                                     {showForm ? (
                                         <>
-                                            <h2>Have a Question?</h2>
-                                            <p>Sign the Form to Contact Us. Our team at The Closing Company will reach
-                                                out as
-                                                soon as possible.
+                                            <h2>{AboutUs.contactUsHeader}</h2>
+                                            <p className='text-white'>
+                                            {AboutUs.contactUsBody}
                                             </p>
                                         </>
                                     ) : (<>
-                                        <h2>Your message has been sent. The Closing Company will contact you soon.</h2>
+                                        <h2>
+                                            {`Your message has been sent. ${AboutUs.slideTitle} will contact you soon.`}
+                                        </h2>
                                     </>)}
                                 </div>
                                 {showForm ? (<form onSubmit={(e) => submitHandler(e)} className="form">

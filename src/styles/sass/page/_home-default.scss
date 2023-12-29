@@ -1059,6 +1059,7 @@
         position: relative;
         left:10%;
         bottom: 0;
+        
 
         @media(max-width:1800px){
             left: 5%;
@@ -1174,6 +1175,8 @@
 
         .theme-btn{
             border-radius: 0;
+            color: white;
+            background-color: #3d312e;
 
             &:after{
                 border-radius: 0;

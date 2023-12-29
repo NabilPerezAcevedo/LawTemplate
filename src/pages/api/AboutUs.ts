@@ -7,7 +7,9 @@ const AboutUs =
         location: 'Capital Center Building Torre Sur Suite 401 San Juan, PR 00918',
         mainEmail: 'Allan@riveralawpr.com',
         secondEmail: 'Assistant@riveralawpr.com',
-        locationUrl: 'https://maps.app.goo.gl/6XPbVc6Zy24ULtqVA'
+        locationUrl: 'https://maps.app.goo.gl/6XPbVc6Zy24ULtqVA',
+        contactUsHeader: "Have a Question?",
+        contactUsBody: "Sign the Form to Contact Us. Our team at The Closing Company will reach out as soon as possible."
     }
 
 export default AboutUs;
