@@ -36,7 +36,7 @@ const Features = (props) => {
                                     </div>
                                     <div className="wpo-features-text">
                                         <h2>{featres.title}</h2>
-                                        <p>{featres.des}</p>
+                                        <p className={'font-bold'}  >{featres.des}</p>
                                     </div>
                                     <div className="visible-icon">
                                         <i className={featres.fIcon}></i>

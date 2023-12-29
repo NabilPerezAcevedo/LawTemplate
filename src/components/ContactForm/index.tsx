@@ -4,7 +4,9 @@ import SimpleReactValidator from 'simple-react-validator';
 import Images from "@/pages/api/ContactFormImages";
 import emailjs from '@emailjs/browser'
 import AboutUs from '@/pages/api/AboutUs';
+import Services from "@/pages/api/Services";
 
+const categories = Services.map((service) => service.sTitle)
 
 const Consultinencey = () => {
 
@@ -45,7 +47,7 @@ const Consultinencey = () => {
                 text
             } = await emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, {
                 from_name: forms.name,
-                to_name: "The Closing Company",
+                to_name: AboutUs.name,
                 subject: forms.subject,
                 message: forms.message,
                 phone_number: forms.phone,
@@ -134,12 +136,9 @@ const Consultinencey = () => {
                                                     className="form-control"
                                                     name="subject">
                                                     <option defaultValue={''}>Select a Category</option>
-                                                    <option>Closing Notary Service</option>
-                                                    <option>Coordinate Escrow Deposit</option>
-                                                    <option>Title Search</option>
-                                                    <option>Resolve Property Issues</option>
-                                                    <option>Municipal Tax Procedures</option>
-                                                    <option>Transactional Structuring</option>
+                                                    {categories.map((title, index) => (
+                                                        <option key={index}>{title}</option>
+                                                    ))}
                                                 </select>
                                                 {validator.message('subject', forms.subject, 'required')}
                                             </div>
