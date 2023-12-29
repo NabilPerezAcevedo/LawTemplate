@@ -1162,7 +1162,8 @@
             -o-appearance: none;
             appearance: none;
             -moz-appearance: none;
-            background: #3d312e url(/images/select-icon.png) no-repeat calc(100% - 15px) center;
+            background-image: url(/images/select-icon.png) no-repeat calc(100% - 15px) center;
+            background-color: #3d312e;
             position: relative;
 
             option{
