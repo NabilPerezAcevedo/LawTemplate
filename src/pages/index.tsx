@@ -7,6 +7,8 @@ import PracticeArea from "@/components/PracticeArea";
 import ContactForm from "@/components/ContactForm";
 import Hero2 from "@/components/Hero2";
 
+
+
 export default function Home(props) {
     return (
         <Fragment>

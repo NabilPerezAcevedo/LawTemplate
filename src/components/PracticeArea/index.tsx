@@ -6,11 +6,13 @@ import useBetterMediaQuery from "@/hooks/useMediaQuery";
 
 export default function PracticeArea() {
 
+    const [currentTitle, setCurrentTitle] = useState<string>(Services[0].sTitle)
     const [currentDescription, setCurrentDescription] = useState<string>(Services[0].description)
     const isSmallScreen = useBetterMediaQuery("(max-width:768px)")
     const isMobileM = useBetterMediaQuery("(max-width:375px)")
 
     const changeDescription = (service: ServicesType) => {
+        setCurrentTitle(service.sTitle)
         setCurrentDescription(service.description)
         isSmallScreen && scrollIntoFeatures()
     }
@@ -31,6 +33,7 @@ export default function PracticeArea() {
                     <div className={"columns-1"}>
                         <div id={'practice-area-description'} className={"row"}>
                             <div className={"mr-2"}>
+                                <h1 className={'text-white'}>{currentTitle}</h1>
                                 <p className={"text-white"}>{currentDescription}</p>
                             </div>
                         </div>
@@ -77,6 +80,7 @@ export default function PracticeArea() {
                 <div className="row">
                     <div className='grid grid-cols-2'>
                         <div className={"mr-2"}>
+                            <h1 className={'text-white'}>{currentTitle}</h1>
                             <p className={"text-white"}>{currentDescription}</p>
                         </div>
                         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-1'>
