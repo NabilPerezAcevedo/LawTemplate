@@ -26,7 +26,7 @@ export default function PracticeArea() {
         document.getElementById('practice-area-description').scrollIntoView(options)
     }
 
-    if(isSmallScreen) {
+    if (isSmallScreen) {
         return (
             <section id={'expertise'} className="wpo-service-section-s2 section-padding">
                 <div className="container">
@@ -80,7 +80,7 @@ export default function PracticeArea() {
                 <div className="row">
                     <div className='grid grid-cols-2'>
                         <div className={"mr-2"}>
-                            <h1 className={'text-white'}>{currentTitle}</h1>
+                            <h1 className={"text-[#e3b576]"}>{currentTitle}</h1>
                             <p className={"text-white"}>{currentDescription}</p>
                         </div>
                         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-1'>
